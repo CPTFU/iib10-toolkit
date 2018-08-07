@@ -11,7 +11,7 @@ docker pull jarsis:iib10-toolkit
 ## Running
 If you want the container to wait silently run it with an allocated pseudo tty:
 ```
-docker run -t -d jarsis:iib10-toolkit
+docker run -d -t jarsis:iib10-toolkit
 ```
 
 ## Using the toolkit
