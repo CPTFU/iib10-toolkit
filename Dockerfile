@@ -23,6 +23,8 @@ RUN wget http://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/integrati
 	cd /opt/ibm/iib-10.0.0.12/ && \
 	./iib make registry global accept license silently
 
+RUN rm 10.0.0.12-IIB-LINUX64-DEVELOPER.tar.gz
+
 RUN /usr/bin/Xvfb :100 &
 
 ENTRYPOINT ["/bin/bash"]
