@@ -26,6 +26,5 @@ RUN wget http://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/integrati
 RUN rm 10.0.0.12-IIB-LINUX64-DEVELOPER.tar.gz
 
 RUN /usr/bin/Xvfb :100 &
-RUN echo "/usr/bin/Xvfb :100 &" >> /root/.bashrc
 
 ENTRYPOINT ["/bin/bash"]
